@@ -1,32 +1,26 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <stdio.h> 
+#include <stdlib.h>
+/*
+  PROGRAMA AREA Y PERIMETRO DEL CIRCULO
+  AUTOR: LISETH ASPRILLA
+  FECHA: MAYO 16 2023 
+*/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+  //DEFINICION DE VARIABLES
+float DIAMETRO,RADIO,AREA,PERIMETRO;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main() {
+  fflush(stdin);//LIBERA EL BUFFER DEL TECLADO
+  printf("ENTRAR RADIO DEL CIRCULO CM...?");
+  scanf("%f",&RADIO); 
+  RADIO=RADIO;
+  DIAMETRO=RADIO*2;
+  AREA=3.14159*RADIO*RADIO;
+  PERIMETRO=2*3.14159*RADIO;
+  printf("\n\nCALCULO TOTAL DEL RADIO.........%10.1fCM",RADIO);
+  printf("\nCALCULO TOTAL DEL DIAMETRO......%10.1fCM",DIAMETRO);
+  printf("\nCALCULO TOTAL DEL AREA..........%10.1fCM",AREA);
+  printf("\nCALCULO TOTAL DEL PERIMETRO.....%10.1fCM",PERIMETRO);
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+}
